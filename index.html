@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+         table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      background-color: rgb(118, 180, 118);
+    }
+    th, td {
+      padding: 15px;
+    }
+    #submit{
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        font-size: bold large;
+        background-color: aqua;
+    }
+    body{
+        background-image: url("https://vsememy.ru/wp-content/uploads/2022/09/d9067506b14cb45a885d5b390a06c8ef.jpg");
+    }
+    #data{
+        padding: 20px 20px;
+    }
+    h1{
+        color: rgb(1, 1, 15);
+        background-color: lightblue;
+        padding: 10px 10px;
+    }
+    #foodtab{
+        width: 120px;
+        height: 22px;
+    }
+    </style>
+</head>
+<body>
+    <form id="data">
+        <h1>Customer Details</h1>
+        <br>
+        <label for="First Name">First Name:</label>
+        <input type="text" id="Fname" name="First Name">
+        <br><br>
+        <label for="Last Name">Last Name:</label>
+        <input type="text" id="Lname" name="Last Name">
+        <br><br>
+        <label for="Address">Address:</label>
+        <input type="text" id="Address" name="Address">
+        <br><br>
+        <label for="Pincode">Pincode:</label>
+        <input type="text" id="Pincode" name="Pincode">
+        <br><br>
+        <label for="Gender">Gender:</label>
+        <select id="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="TransGender">TransGender</option>
+        </select>
+        <br><br>
+        <label for="Food">Choice of Food: (Must choose atleast 2 Foods)</label>
+        <select id="foodtab" multiple data-mdb-visible-options="2">
+            <option value="North Indian">North Indian</option>
+            <option value="South Indian">South Indian</option>
+            <option value="Pure Veg">Pure Veg</option>
+            <option value="Chines">Chines</option>
+            <option value="cakes">cakes</option>
+          </select>
+         
+        
+        <br><br>
+       
+        <label for="State">State:</label>
+        <input type="text" id="State" name="State">
+        <br><br>
+        <label for="Country">Country:</label>
+        <input type="text" id="Country" name="Country">
+        <br><br>
+
+        <input type="submit" id="submit" value="Submit">
+        <br><br>
+    </form>
+    <br><br>
+
+    <table id="tab">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>Choice of Food</th>
+            <th>State</th>
+            <th>Country</th>
+        </tr>
+
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
